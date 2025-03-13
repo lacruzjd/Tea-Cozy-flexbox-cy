@@ -1,0 +1,160 @@
+/* estilos generales*/
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: seashell;
+  text-align: center;
+  opacity: 0.9;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+header {
+  width: 100%;
+  height: 69px;
+  padding: 0 10px;
+  background-color: black;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo > img {
+  height: 50px;
+}
+
+nav {
+  margin-right: 20px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+nav li a {
+  color: seashell;
+  opacity: 0.9;
+}
+
+nav li a:hover {
+  color: rgb(244, 204, 82);
+}
+
+main {
+  width: 100%;
+  margin-top: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner {
+  max-width: 1200px;
+  height: 700px;
+  margin-bottom: 20px;
+  background-image: url(./img/img-mission-background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mission {
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission h2 {
+  margin-bottom: 20px;
+}
+
+.notice {
+  max-width: 1000px;
+  margin-top: 69px;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.notice .head {
+  flex-basis: 100%;
+}
+
+.notice .head h2,
+.locations h2 {
+  margin-top: 69px;
+}
+
+.notice article {
+  margin: 20px;
+}
+
+.notice img {
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.locations {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 500px;
+  background-image: url(./img/img-locations-background.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.locations h2 {
+  flex-basis: 100%;
+}
+
+.locations article {
+  background-color: black;
+  opacity: 1;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.locations article p {
+  margin: 20px;
+}
+
+.contact {
+  padding: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.copyright {
+  margin: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+}
