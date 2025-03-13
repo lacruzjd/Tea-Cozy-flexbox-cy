@@ -1,8 +1,17 @@
+:root {
+  --primary-color: seashell;
+  --background-color: black;
+  --highlight-color: rgb(244, 204, 82);
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
 /* estilos generales*/
 * {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  color: seashell;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--primary-color);
   text-align: center;
   opacity: 0.9;
 }
@@ -13,24 +22,25 @@ html {
 
 body {
   width: 100%;
-  background-color: black;
-  position: absolute;
+  background-color: var(--background-color);
+  /* position: relative; */
 }
 
 header {
   width: 100%;
   height: 69px;
   padding: 0 10px;
-  background-color: black;
-  border-bottom: 1px solid seashell;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--primary-color);
   position: fixed;
+  top: 0;
   z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo > img {
+.logo img {
   height: 50px;
 }
 
@@ -44,12 +54,12 @@ nav li {
 }
 
 nav li a {
-  color: seashell;
+  color: var(--primary-color);
   opacity: 0.9;
 }
 
 nav li a:hover {
-  color: rgb(244, 204, 82);
+  color: var(--highlight-color);
 }
 
 main {
@@ -74,7 +84,7 @@ main {
 
 .mission {
   padding: 10px;
-  background-color: black;
+  background-color: var(--background-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -131,7 +141,7 @@ main {
 }
 
 .locations article {
-  background-color: black;
+  background-color: var(--background-color);
   opacity: 1;
   padding: 20px;
   margin: 20px;
